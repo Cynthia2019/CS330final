@@ -17,7 +17,7 @@
     height: 150px;
 }
 .navigator {
-    background-color: lavenderblush;
+    background-color: transparent;
     width: 100%;
     height: 8vh;
     text-align: left;
@@ -45,4 +45,39 @@
 }
 .contact div {
     margin: 5px
+}
+#projects {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.project-header {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.project-1,
+.project-2 {
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px 5px rgba(0,0,0,0.25);
+    width:20vw; 
+    height: 400px;
+    margin-left: 5vw;
+}
+.project-image img{
+    border-radius: 5%;
+    width: 20vw;
+    height: 20vw;
+}
+.project-name {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.project-date {
+    color: gray; 
+    font-size: smaller;
+    margin: 10px 0;
 }
