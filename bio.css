@@ -2,7 +2,7 @@
     margin: 0 10vh;
 }
 .navigator {
-    background-color: transparent;
+    background-color: antiquewhite;
     width: 100%;
     height: 8vh;
     text-align: left;
@@ -45,4 +45,7 @@
 }
 .personal-information div {
     margin: 30px;
+}
+.courses {
+    line-height: 2rem;
 }

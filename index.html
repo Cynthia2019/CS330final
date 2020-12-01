@@ -3,31 +3,62 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
     <title>My Portfolio</title>
   </head>
   <body>
     <div class="container">
+      <!--navigator-->
       <div class="navigator">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-label="home page">Home</a></li>
           <li><a href="bio.html" aria-label="link to bio page">About Me</a></li>
+          <!--jump to the projects section-->
           <li><a href='#projects' aria-label="link to projects section">My Projects</a></li>
           <li><a href='https://drive.google.com/file/d/1LLM16l0oE6zacqNwhhuFfIu6dtEuJmaR/view?usp=sharing' aria-label="link to resume">My Resume</a></li>
         </ul>
       </div>
       <div class='main-image'>
+        <!--avatar for personal image display-->
        <div class="avatar">
          <img src="./asset/Cynthia(Yujia)Xie.jpeg" alt="avatar"/>
        </div>
        <div class="contact">
+         <!--displays personal contact informatino-->
          <div id="phone">909-000-8786</div>
          <div id="email">yujixia2000@u.northwestern.edu</div>
          <div id="address">2324 Campus Drive, 66666</div>
+         <!--button for modal opening, modal contains the form for subscription-->
+         <button class="subscribe" aria-label="button for subscription" onclick="subscribe()">Subscribe</button>
+         <div class="modal" id='modal-subscription'>
+          <!--modal content-->
+          <div class="modal-content">
+            <button class="close" id='close-btn' onclick="onClose()">&times;</button>
+            <!--Subscription form-->
+            <form name='subscription-form'>
+              <label for='firstname'>First Name: </label>
+              <input id='firstname' type='text' required/><br>
+              <label for='lastname'>Last Name: </label>
+              <input id='lastname' type='text' required/><br>
+              <label for='email' type='text'>Email: </label>
+              <input id='email' type='text' required/><br>
+              <label for='phone' type='text'>Phone: </label>
+              <input id='phone' type='text' placeholder="9084198888"/><br>
+              <input id='student' type="radio" value="Student" name='type'>
+              <label for='student'>Student</label><br>
+              <input id='faculty' type="radio" value='Faculty' name='type'>
+              <label for='faculty'>Faculty</label><br>
+              <input id='other' type="radio" value="Other" name='type'>
+              <label for='other'>Other</label><br>
+              <input id='submit' type='submit' value="Submit">
+            </form>
+          </div>
+         </div>
        </div>
       </div>
+      <!--projects section-->
       <div id='projects'>
         <h2 class="project-header">My Projects</h2>
+        <!--first project, clickable-->
         <div class="project-1">
           <div class="project-image">
             <img src="./asset/project1.png" alt="demo image of project 1"/>
@@ -40,6 +71,7 @@
           </div>
           <a href="project1.html">Read More</a>
         </div>
+        <!--second project, not clickable-->
         <div class="project-2">
           <div class="project-image">
             <img src="./asset/project2.png" alt="demo image of project 2"/>
@@ -58,8 +90,7 @@
 
   </body>
 
-  <script>
-  </script>
+<script src="main.js"></script>
 
 
 </html>
